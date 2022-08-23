@@ -39,6 +39,57 @@ section{
     margin:0 auto;
     margin-top: 2rem;
 }
+.header{
+    background-color: var(--blue);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.header .flex{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem ;
+    max-width: 1200px;
+    margin :0 auto;
+
+}
+.header .flex .logo{
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: var(--white);
+}
+.header .flex a{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+.header .flex a:hover{
+    color: yellow;
+}
+.header .flex .cart{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+.header .flex .cart:hover{
+    color: yellow;
+}.header .flex .cart span{
+    padding: .1rem .5rem;
+    border-radius: .5rem;
+    background-color: #eee;
+    font-size: 2rem;
+}
+#menu-btn{
+    margin-left: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--white);
+    /* display: none; */
+}
+#menu-btn.fa-times{
+    transform: rotate(180deg);
+}
 .add-product-form h3{
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -60,6 +111,9 @@ section{
 .btn:hover,.option-btn:hover,.delete-btn:hover{
     background-color: #333;
 }
+.option-btn{
+    background-color: orange;
+}
 .add-product-form .box{
     text-transform: none;
     padding: 1.2rem 1.4rem;
@@ -69,4 +123,34 @@ section{
     background-color: #fff;
     margin: 1rem ;
 
+}
+/* @media querie */
+@media screen  and (max-width:991px){
+    html{
+        font-size: 50%;
+    }
+}
+@media screen  and (max-width:768px){
+   #menu-btn{
+    display: inline-block;
+    transition: 2s linear;
+   }
+   .header .flex .navbar{
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background-color: var(--blue);
+    clip-path: polygon(0 0,100% 0,100% 0,0 0);
+   }
+   .header .flex .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 0 0 );
+    
+   }
+   .header .flex .navbar a{
+    margin: 2rem;
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+   }
 }
