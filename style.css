@@ -1,0 +1,72 @@
+:root{
+  --blue:#2980b9;
+    --red:tomato;
+    --orange:orange;
+    --black:#333;
+    --white:#fff;
+    --bg-color:#eee;
+    --box--shadow:0.5rem 1rem rgba(0,0,0,.1);
+    --border:1rem solid #999;
+
+}
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section{
+    padding: 2rem;
+}
+.add-product-form{
+    max-width: 50rem;
+    background-color: #eee;
+    border-radius: .5rem;
+    padding: 2rem;
+    margin:0 auto;
+    margin-top: 2rem;
+}
+.add-product-form h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+}
+.btn,.option-btn,.delete-btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--blue);
+    font-size: 1.7rem;
+    color: #fff;
+    padding: 1.2rem 3rem;
+    border-radius: 0.5rem;
+
+}
+.btn:hover,.option-btn:hover,.delete-btn:hover{
+    background-color: #333;
+}
+.add-product-form .box{
+    text-transform: none;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.7rem;
+    color: #333;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    margin: 1rem ;
+
+}
